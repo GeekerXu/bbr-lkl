@@ -23,6 +23,6 @@ docker build -t geekerxu/bbr-lkl:latest .
 
 这个镜像的妙处，是可以对任意网络服务器进行加速，如果你的WEB服务器运行在1234端口，那么你可以这样来对这个端口进行加速：
 
-docker run -d --privileged -e TARGET_HOST=服务器外网IP -e TARGET_PORT=1234 -p 80:8888 wuqz/lkl:latest
+docker run -d --privileged -e TARGET_HOST=服务器外网IP -e TARGET_PORT=1234 -p 80:8888 geekerxu/bbr-lkl
 
 这样访问服务器的80端口，就是加速后访问WEB服务器了！
