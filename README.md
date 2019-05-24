@@ -21,4 +21,4 @@ docker build -t geekerxu/bbr-lkl:latest .
 
 5.启动容器
 
-docker run -d --restart=always --privileged --link $(dockername):myhost -e TARGET_HOST=myhost -e TARGET_PORT=$(加速端口) -p 8888:8888 --name lkl wuqz/lkl:latest
+docker run -d --restart=always --privileged --link $(dockername):myhost -e TARGET_HOST=myhost -e TARGET_PORT=$(加速端口) -p 8888:8888 --name lkl geekerxu/bbr
